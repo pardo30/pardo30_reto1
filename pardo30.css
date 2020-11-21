@@ -1,7 +1,6 @@
 body{
-    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #CDCDCD;
+    background-color: #ffffff;
 }
 header{
     padding: 0% 5%;
@@ -31,16 +30,32 @@ header a{
     color: black;
 }
 footer{
-    width: 90%;
-    position: absolute;
-    bottom: 0;
-    background-color: #214E34;
-    padding: 1% 5%;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 footer a{
-    color: #CDCDCD;
+    color: #000000;
     text-decoration: none;
     font-size: 0.8em;
+    
+}
+.container{
+    width: 75vh;
+    position: sticky;
+    margin: 9vh auto;
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-gap: 10px;
+}
+.sq-img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.p30{
+    grid-column: x0 / x2;
+    grid-row: y1 / y3;
+}
+.logo-bot a:hover{
+
 }
