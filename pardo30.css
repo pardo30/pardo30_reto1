@@ -2,6 +2,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
 }
+a{
+    text-decoration: none;
+}
 header{
     margin-right: 20%;
     text-align: right;
@@ -58,56 +61,79 @@ footer a{
 /*CONTACTO*/
 .menu-general{
     display: flex;
-    justify-content: space-between;
-    width: 60vw;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
     margin: auto;
     border: 20px;
 }
 .menu-general h1{
     width: 100%;
 }
+.menu-general a{
+    color: black;
+}
 .nav-panel{
     display: flex;
-    flex-direction: column;
-    width: 29%;
-    box-sizing: content-box;
+    margin-right: 2%;
 }
-.nav-panel .logo img{
-    width: 100%;
+.nav-items{
+    display: flex;
+    align-items: flex-end;
 }
 .nav-items ul{
     margin: 0;
     padding: 0;
 }
 .nav-items li{
+    text-align: right;
     list-style: none;
     margin-top: 1em;
     margin-left: 0%;
 }
-.content-panel{
-    width: 70%;
-    box-sizing: border-box;
+.nav-items li:hover{
+   font-size: 1.2em; 
 }
 .cont-grid{
     display: grid;
-    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
-    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-template-columns: [x0] 25vh [x1] 25vh [x2] 25vh [x3];
+    grid-template-rows: [y0] 25vh [y1] 25vh [y2] 25vh [y3];
     grid-gap: 10px;
 }
 .cont-grid .sq-img img{
     width: inherit;
 }
 .cont-email{
-    background-color: red;
     grid-column: x0 / x2;
-    grid-row: y0 / y1;  
+    grid-row: y0 / y1;
+    position: relative;
+}
+.cont-email a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black
 }
 .cont-info{
-    background-color: green;
+    text-align: justify;
+    color: black;
     grid-column: x2 / x3;
     grid-row: y1 / y2;  
 }
 .cont-grid .o{
     grid-column: x2 / x3;
     grid-row: y2 / y3;   
+}
+.corner{
+    grid-column: x2 / x3;
+    grid-row: y0 / y1;   
+}
+.corner img{
+    height: 25vh;
+}
+.logo-github a{
+    width: 25vh;
 }
