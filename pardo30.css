@@ -3,31 +3,8 @@ body{
     background-color: #ffffff;
 }
 header{
-    padding: 0% 5%;
-    margin-top: 10px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(54,65,86,1) 30%, rgba(255,255,255,0) 70%);
-    display: flex;
-    justify-content: space-between;
-}
-header img{
-    width: 80px;
-}
-header nav{
-    margin: auto 10px;
-}
-header nav ul{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    list-style: none;
-}
-header nav li{
-    padding: 10px;
-    text-decoration: none;
-}
-header a{
-    text-decoration: none;
-    color: black;
+    margin-right: 20%;
+    text-align: right;
 }
 footer{
     text-align: center;
@@ -77,4 +54,60 @@ footer a{
 }
 .logo-bot a:hover .logo-txt{
     display: block;
+}
+/*CONTACTO*/
+.menu-general{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    margin: auto;
+    border: 20px;
+}
+.menu-general h1{
+    width: 100%;
+}
+.nav-panel{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    box-sizing: content-box;
+}
+.nav-panel .logo img{
+    width: 100%;
+}
+.nav-items ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-items li{
+    list-style: none;
+    margin-top: 1em;
+    margin-left: 0%;
+}
+.content-panel{
+    width: 70%;
+    box-sizing: border-box;
+}
+.cont-grid{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+    grid-gap: 10px;
+}
+.cont-grid .sq-img img{
+    width: inherit;
+}
+.cont-email{
+    background-color: red;
+    grid-column: x0 / x2;
+    grid-row: y0 / y1;  
+}
+.cont-info{
+    background-color: green;
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;  
+}
+.cont-grid .o{
+    grid-column: x2 / x3;
+    grid-row: y2 / y3;   
 }
