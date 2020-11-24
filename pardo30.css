@@ -200,10 +200,11 @@ footer a{
 }
 .dis3{
     background-color: green;
-    grid-column: x0 / x1;
+    grid-column: x2 / x3;
     grid-row: y2 / y3;   
 }
 .txt-d3{
+    text-align: right;
     grid-column: x1 / x2;
     grid-row: y2 / y3;   
 }
