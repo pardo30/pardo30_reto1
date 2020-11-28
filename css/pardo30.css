@@ -45,7 +45,7 @@ footer a{
     display: none;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 15%;
     z-index: 10;
     font-size: 1.2em;
     color: #000
@@ -121,7 +121,7 @@ footer a{
     right: 5px;
     text-align: right;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: black
 }
 .cont-info{
@@ -238,4 +238,31 @@ footer a{
 }
 .me2 p{
     text-align: justify;
+}
+/*REFERENCES*/
+.ref1{
+    grid-column: x0 / x1;
+    grid-row: y1 / y2;   
+}
+.ref2{
+    grid-column: x1 / x2;
+    grid-row: y1 / y2;   
+}
+.ref3{
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;   
+}
+.simbol{
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ref3{
+    grid-column: x2 / x3;
+    grid-row: y1 / y2;   
+}
+.ref5{
+    grid-column: x1 / x3;
+    grid-row: y2 / y3;   
 }
