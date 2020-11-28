@@ -19,9 +19,9 @@ footer a{
     
 }
 .container{
-    width: 75vh;
+    width: 65vh;
     position: sticky;
-    margin: 9vh auto;
+    margin: 15vh auto;
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
@@ -38,7 +38,6 @@ footer a{
 }
 .logo-bot{
     position: relative;
-    float: left;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -46,10 +45,10 @@ footer a{
 .logo-txt{
     display: none;
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 10%;
     z-index: 10;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #000
 }
 .logo-bot a:hover img{
@@ -59,13 +58,16 @@ footer a{
     display: block;
 }
 /*CONTACTO*/
+#box{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .menu-general{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70%;
-    margin: auto;
-    margin-top: 10vh;
     border: 20px;
 }
 .menu-general h1{
@@ -81,6 +83,8 @@ footer a{
 .nav-items{
     display: flex;
     align-items: flex-end;
+    justify-content: flex-end;
+    width: 20vh;
 }
 .nav-items ul{
     margin: 0;
@@ -97,8 +101,8 @@ footer a{
 }
 .cont-grid{
     display: grid;
-    grid-template-columns: [x0] 25vh [x1] 25vh [x2] 25vh [x3];
-    grid-template-rows: [y0] 25vh [y1] 25vh [y2] 25vh [y3];
+    grid-template-columns: [x0] 20vh [x1] 20vh [x2] 20vh [x3];
+    grid-template-rows: [y0] 20vh [y1] 20vh [y2] 20vh [y3];
     grid-gap: 10px;
 }
 .cont-grid .sq-img img{
@@ -143,7 +147,7 @@ footer a{
     height: 25vh;
 }
 .logo-github a{
-    width: 25vh;
+    width: 20vh;
 }
 /*PROYECTOS*/
 .proy1{
@@ -180,7 +184,6 @@ footer a{
 }
 /*DISEÑOS*/
 .dis1{
-    background-color: blue;
     grid-column: x0 / x1;
     grid-row: y0 / y1;   
 }
@@ -189,7 +192,6 @@ footer a{
     grid-row: y0 / y1;   
 }
 .dis2{
-    background-color: red;
     grid-column: x1 / x2;
     grid-row: y1 / y2;   
 }
@@ -199,15 +201,21 @@ footer a{
     grid-row: y1 / y2;   
 }
 .dis3{
-    background-color: green;
-    grid-column: x2 / x3;
+    grid-column: x0 / x1;
     grid-row: y2 / y3;   
 }
 .txt-d3{
-    text-align: right;
     grid-column: x1 / x2;
     grid-row: y2 / y3;   
 }
 .content-panel h3{
     margin: 0;
+}
+.dis1 img, .dis2 img, .dis3 img{
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.9);
+}
+.dis1 a:hover img, .dis2 a:hover img, .dis3 a:hover img{
+    filter:grayscale(0);
 }
