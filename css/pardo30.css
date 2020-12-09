@@ -47,10 +47,12 @@ footer a{
     left: 2%;
     z-index: 10;
     color: #000;
-    @media screen {
-        font-size: medium;    
+    font-size: large;    
+}
+@media only screen and (max-width: 767px){
+    .logo-txt{
+        font-size: small;
     }
-    
 }
 .logo-bot a:hover img{
     opacity: 0.1;
@@ -94,11 +96,31 @@ footer a{
 .nav-items li{
     text-align: right;
     list-style: none;
-    margin-top: 1em;
+    margin-top: 0.5em;
     margin-left: 0%;
 }
 .nav-items li:hover{
-   font-size: 1.2em; 
+    font-size: 1.2em; 
+}
+.return{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .menu-general{
+        flex-direction: column;
+    }
+    .nav-panel{
+        justify-content: flex-end;
+    }
+    .nav-items{
+        display: none;
+    }
+    .return{
+        display: block;
+        justify-content: right;
+        font-size: 4em;
+        color: black;
+    }
 }
 .cont-grid{
     display: grid;
@@ -126,15 +148,33 @@ footer a{
     font-size: 1.3em;
     color: white
 }
-.cont-info{
+@media only screen and (max-width: 767px){
+    .cont-title h1{
+        font-size: 0.9em;
+    }
+}
+.cont-info, .cont-info-peq{
     text-align: justify;
     color: black;
     grid-column: x2 / x3;
     grid-row: y1 / y2;  
 }
+.cont-info-peq{
+    display: none;
+}
 .cont-info p{
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    font-size: small;
+}
+@media only screen and (max-width: 767px){
+    .cont-info{
+        display: none;
+    }
+    .cont-info-peq{
+        display: block;
+        font-size: small;
+    }
 }
 .cont-grid .o{
     grid-column: x2 / x3;
