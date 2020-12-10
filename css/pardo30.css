@@ -83,7 +83,7 @@ footer a{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 10vh;
+    width: 10vw;
 }
 .nav-items ul{
     margin: 0;
