@@ -327,6 +327,9 @@ footer a{
     .nav-items{
         display: none;
     }
+    footer{
+        left: 5%;
+    }
     .logo-txt{
         font-size: small;
     }
@@ -359,7 +362,8 @@ footer a{
         filter:grayscale(none);
     }
     .me2 p{
-        font-size: 16px;
+        font-size: 0.8em;
+        margin:0;
     }
     .me2 p:nth-child(2){
         display: none;
