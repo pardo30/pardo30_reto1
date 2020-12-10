@@ -25,6 +25,7 @@ footer a{
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
     grid-gap: 10px;
 }
+
 .sq-img{
     width: 100%;
     margin: 0;
@@ -49,18 +50,13 @@ footer a{
     color: #000;
     font-size: large;    
 }
-@media only screen and (max-width: 767px){
-    .logo-txt{
-        font-size: small;
-    }
-}
+
 .logo-bot a:hover img{
     opacity: 0.1;
 }
 .logo-bot a:hover .logo-txt{
     display: block;
 }
-/*CONTACTO*/
 #box{
     height: 100vh;
     display:flex;
@@ -105,23 +101,6 @@ footer a{
 .return{
     display: none;
 }
-@media only screen and (max-width: 767px){
-    .menu-general{
-        flex-direction: column;
-    }
-    .nav-panel{
-        justify-content: flex-end;
-    }
-    .nav-items{
-        display: none;
-    }
-    .return{
-        display: block;
-        justify-content: right;
-        font-size: 4em;
-        color: black;
-    }
-}
 .cont-grid{
     display: grid;
     grid-template-columns: [x0] 20vh [x1] 20vh [x2] 20vh [x3];
@@ -129,7 +108,7 @@ footer a{
     grid-gap: 10px;
 }
 .cont-grid .sq-img img{
-    width: inherit;
+    width: 100%;
 }
 .cont-title{
     background-color: black;
@@ -148,11 +127,7 @@ footer a{
     font-size: 1.3em;
     color: white
 }
-@media only screen and (max-width: 767px){
-    .cont-title h1{
-        font-size: 0.9em;
-    }
-}
+/*CONTACTO*/
 .cont-info, .cont-info-peq{
     text-align: justify;
     color: black;
@@ -167,15 +142,7 @@ footer a{
     margin-bottom: 5px;
     font-size: small;
 }
-@media only screen and (max-width: 767px){
-    .cont-info{
-        display: none;
-    }
-    .cont-info-peq{
-        display: block;
-        font-size: small;
-    }
-}
+
 .cont-grid .o{
     grid-column: x2 / x3;
     grid-row: y2 / y3;   
@@ -195,7 +162,7 @@ footer a{
     grid-column: x0 / x1;
     grid-row: y0 / y2;   
 }
-.txt1{
+.txt-p1{
     grid-column: x1 / x2;
     grid-row: y0 / y1;   
 }
@@ -203,7 +170,7 @@ footer a{
     grid-column: x2 / x3;
     grid-row: y1 / y2;   
 }
-.txt2{
+.txt-p2{
     text-align: right;
     grid-column: x1 / x2;
     grid-row: y1 / y2;   
@@ -212,7 +179,7 @@ footer a{
     grid-column: x1 / x3;
     grid-row: y2 / y3;   
 }
-.txt3{
+.txt-p3{
     text-align: right;
     grid-column: x0 / x1;
     grid-row: y2 / y3;   
@@ -334,5 +301,75 @@ footer a{
     font-size: 1em;
     text-align: right;
     margin: 0;
-
+}
+@media only screen and (max-width: 450px){
+    .container{
+        display: grid;
+        grid-template-columns: [x0] 30vw [x1] 30vw [x2] 30vw [x3];
+        grid-template-rows: [y0] 30vw [y1] 30vw [y2] 30vw [y3];
+        grid-gap: 5px;
+    }
+    .cont-grid{
+        display: grid;
+        grid-template-columns: [x0] 30vw [x1] 30vw [x2] 30vw [x3];
+        grid-template-rows: [y0] 30vw [y1] 30vw [y2] 30vw [y3];
+        grid-gap: 5px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .menu-general{
+        flex-direction: column;
+    }
+    .nav-panel{
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .nav-items{
+        display: none;
+    }
+    .logo-txt{
+        font-size: small;
+    }
+    .return{
+        display: block;
+        justify-content: right;
+        font-size: 3em;
+        color: black;
+    }
+    .cont-info{
+        display: none;
+    }
+    .cont-info-peq{
+        display: block;
+        font-size: small;
+    }
+    .cont-title h1{
+        font-size: 0.7em;
+    }
+    .txt h3{
+        font-size: 1em;
+    }
+    .txt p{
+        display: none;
+    }
+    .proy1 a:hover img, .proy2 a:hover img, .proy3 a:hover img{
+        filter:grayscale(none);
+    }
+    .dis1 a:hover img, .dis2 a:hover img, .dis3 a:hover img{
+        filter:grayscale(none);
+    }
+    .me2 p{
+        font-size: 16px;
+    }
+    .me2 p:nth-child(2){
+        display: none;
+    }
+    .quote blockquote{
+        font-size: 1.8em;
+    }
+    .quote p{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width: 767px){
 }
